@@ -2,11 +2,11 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #333b6d;
 }
 header {
     background-color: #333;
-    color: #fff;
+    color: #79d749;
     padding: 20px;
     text-align: center;
 }
@@ -17,13 +17,13 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: #fff;
+    color: #953a95;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #ddd;
+    background-color: #a11818;
     color: black;
 }
 main {
@@ -31,7 +31,7 @@ main {
 }
 footer {
     background-color: #333;
-    color: #fff;
+    color: #3599af;
     text-align: center;
     padding: 10px;
     position: fixed;
