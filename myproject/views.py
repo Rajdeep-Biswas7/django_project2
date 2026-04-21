@@ -1,8 +1,10 @@
 from django.http import HttpResponse 
 from django.shortcuts import render 
+from application.models import Product
 
 def home(request):
-    return render(request, 'website/index.html')
+    products = Product.objects.all()
+    return render(request, 'website/index.html', {'products': products})
 
 def about(request):
     return render(request, 'website/about.html')
@@ -13,4 +15,4 @@ def contact(request):
 def services(request):
     return render(request, 'website/services.html')
 def products(request):
-    return render(request, 'website/products.html')    
+    return render(request, 'website/products.html')

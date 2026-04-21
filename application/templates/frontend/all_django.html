@@ -6,5 +6,24 @@
 
 {% block content %}
     <h1>All chai for you</h1>
+
+    <div class="grid grid-cols-3 gap-4 m-4 ">
+
+    {% for product in products %}
+    <div class="bg-gray-800 shadow-md overflow-hidden p-5 rounded-2xl">
+        <img class="w-full h-full object-cover" src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h2 class="text-2xl font-stretch-90%">{{ product.name }}</h2>
+        <a href="{% url 'product_detail' product.id %}">
+            <button class="bg-green-500 hover:bg-green-700 text-yellow-500 font-bold py-2 px-4 rounded">
+                Add to Cart
+            </button>
+            {{product.type}}-{{product.id}}
+        </a>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price }}</p>
+    </div>
     
 {% endblock %}
+
+
+{% endfor %}

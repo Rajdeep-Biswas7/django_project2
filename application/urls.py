@@ -5,6 +5,8 @@ from . import views
 
 urlpatterns = [
    
-  path('all-django/', views.all_django, name='all_django'),
+    path('', views.all_django, name='all_django'),
+    path('product/<int:product_id>/', views.product_detail, name='product_detail'),
+    
 
 ]

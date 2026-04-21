@@ -2,22 +2,22 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333b6d;
+    background-color: #9f802b;
 }
 header {
-    background-color: #333;
+    background-color: #4b6c2e;
     color: #79d749;
     padding: 20px;
     text-align: center;
 }
 nav {
-    background-color: #444;
+    background-color: #945050;
     overflow: hidden;
 }
 nav a {
     float: left;
     display: block;
-    color: #953a95;
+    color: #ad3cad;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
