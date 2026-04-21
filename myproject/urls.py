@@ -28,4 +28,6 @@ urlpatterns = [
     path('products/', views.products, name='products'),
     path('all-django/', include('application.urls')),
 
+    path('__reload__/', include('django_browser_reload.urls')),  # Add this line for django-browser-reload last line 
+
 ]
