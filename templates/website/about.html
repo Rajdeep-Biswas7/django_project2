@@ -1,0 +1,57 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block content %}
+    <h1 class="bg-amber-300 text-3xl font-bold text-center py-4">About MY TEAAA Junction</h1>
+    
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <div class="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-amber-800 mb-4">Our Story</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Welcome to MY TEAAA Junction, your one-stop destination for premium tea products and exceptional service. 
+                Founded with a passion for bringing the finest teas from around the world to your doorstep, we have been 
+                serving tea enthusiasts for years.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Our mission is to provide authentic, high-quality teas and create a community of tea lovers who appreciate 
+                the art, culture, and tradition behind every cup.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white border rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-amber-800 mb-3">🌍 Quality Products</h3>
+                <p class="text-gray-600">
+                    We source the finest teas from renowned plantations across the globe to ensure superior quality and authentic taste.
+                </p>
+            </div>
+
+            <div class="bg-white border rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-amber-800 mb-3">🚚 Fast Delivery</h3>
+                <p class="text-gray-600">
+                    Experience quick and reliable delivery right to your doorstep, ensuring your teas arrive fresh and on time.
+                </p>
+            </div>
+
+            <div class="bg-white border rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-amber-800 mb-3">💬 Expert Support</h3>
+                <p class="text-gray-600">
+                    Our knowledgeable team is always ready to help you find the perfect tea and answer any questions you may have.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-amber-800 mb-4">Our Values</h2>
+            <ul class="text-gray-700 space-y-2">
+                <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Authenticity & Quality</li>
+                <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Customer Satisfaction</li>
+                <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Sustainable Practices</li>
+                <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Community Building</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
