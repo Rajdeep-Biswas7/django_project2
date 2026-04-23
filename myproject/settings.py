@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'application',
-    'tailwind',
     'theme',
     'django_browser_reload',
+    'tailwind',
 ]
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ['127.0.0.1']
@@ -56,7 +56,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'

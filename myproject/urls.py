@@ -29,7 +29,4 @@ urlpatterns = [
     path('services/', views.services, name='services'),
     path('products/', views.products, name='products'),
     path('all-django/', include('application.urls')),
-
-    path('__reload__/', include('django_browser_reload.urls')),  # Add this line for django-browser-reload last line 
-
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
