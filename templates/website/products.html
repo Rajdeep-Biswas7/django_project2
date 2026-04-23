@@ -1,0 +1,428 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}
+    Products - MY TEAAA Junction
+{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="bg-linear-to-r from-amber-700 to-amber-600 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Our Premium Collection</h1>
+            <p class="text-xl md:text-2xl opacity-95">Curated Teas from Around the World</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <!-- Introduction -->
+        <section class="mb-20">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">The Art of Tea Selection</h2>
+                <p class="text-lg text-gray-700">
+                    We don't believe in offering a simple list of teas. Instead, we've carefully curated our collection into premium categories 
+                    that celebrate quality, origin, and the experience each tea brings. Discover your new favorite.
+                </p>
+            </div>
+        </section>
+
+        <!-- Collection 1: Signature Blends -->
+        <section class="mb-20">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
+                    <span class="text-5xl mr-4">✨</span> Signature Blends
+                </h2>
+                <p class="text-gray-700 text-lg ml-20">
+                    Exclusive house-crafted blends that tell a story. Each blend is a masterpiece combining premium leaves from our finest estates.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="h-40 bg-linear-to-br from-green-300 to-green-700 flex items-center justify-center text-6xl">
+                        🌿
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">The Himalayan Morning Glow</h3>
+                        <p class="text-gray-600 mb-3 text-sm">A delicate blend of white tea with jasmine flowers and hints of honey</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-amber-700 font-bold text-lg">₹599</span>
+                            <span class="text-yellow-500">★★★★★</span>
+                        </div>
+                        <div class="space-y-2 mb-6 text-sm text-gray-600">
+                            <p>🫖 Steeping Time: 3-5 minutes</p>
+                            <p>🌡️ Temperature: 160-170°F</p>
+                            <p>📦 50g (25 cups)</p>
+                        </div>
+                        <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="h-40 bg-linear-to-br from-purple-300 to-purple-700 flex items-center justify-center text-6xl">
+                        🌙
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Midnight Jasmine</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Dark oolong with intoxicating jasmine essence—a luxury evening experience</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-amber-700 font-bold text-lg">₹749</span>
+                            <span class="text-yellow-500">★★★★★</span>
+                        </div>
+                        <div class="space-y-2 mb-6 text-sm text-gray-600">
+                            <p>🫖 Steeping Time: 4-6 minutes</p>
+                            <p>🌡️ Temperature: 195-205°F</p>
+                            <p>📦 75g (30 cups)</p>
+                        </div>
+                        <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="h-40 bg-linear-to-br from-orange-300 to-red-700 flex items-center justify-center text-6xl">
+                        🔥
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Spiced Chai Royale</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Premium black tea with cinnamon, cardamom, and cloves—the perfect chai experience</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-amber-700 font-bold text-lg">₹649</span>
+                            <span class="text-yellow-500">★★★★★</span>
+                        </div>
+                        <div class="space-y-2 mb-6 text-sm text-gray-600">
+                            <p>🫖 Steeping Time: 5-7 minutes</p>
+                            <p>🌡️ Temperature: 200-212°F</p>
+                            <p>📦 100g (35 cups)</p>
+                        </div>
+                        <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection 2: Wellness Line -->
+        <section class="mb-20">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
+                    <span class="text-5xl mr-4">💚</span> The Wellness Line
+                </h2>
+                <p class="text-gray-700 text-lg ml-20">
+                    Teas categorized by benefit. Choose a tea that supports your wellness goals and lifestyle.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wellness Product 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-indigo-600 to-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">😴 Sleep & Relax</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Lavender, chamomile, and passionflower blend for peaceful evenings</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>🌟 Calming & Soothing</p>
+                            <p>💤 Better Sleep Quality</p>
+                            <p>🧘 Stress Relief</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹579</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Product 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-green-600 to-emerald-600 text-white p-4">
+                        <h3 class="text-xl font-bold">⚡ Focus & Matcha</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Pure ceremonial grade matcha for mental clarity and sustained energy</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>🎯 Enhanced Focus</p>
+                            <p>⚡ Sustained Energy</p>
+                            <p>🧠 Mental Clarity</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹899</p>
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Product 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-red-600 to-pink-600 text-white p-4">
+                        <h3 class="text-xl font-bold">🔥 Metabolism Boost</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Green tea with ginger and turmeric to support healthy metabolism</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>🔥 Metabolic Support</p>
+                            <p>💪 Energy Boost</p>
+                            <p>🌶️ Warming & Invigorating</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹529</p>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Product 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-orange-600 to-yellow-600 text-white p-4">
+                        <h3 class="text-xl font-bold">🛡️ Immunity Shield</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">White tea with elderberry, echinacea, and vitamin C for immune support</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>🛡️ Immune Support</p>
+                            <p>💊 Antioxidants</p>
+                            <p>🌟 Health Vitality</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹649</p>
+                        <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Product 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-rose-600 to-orange-600 text-white p-4">
+                        <h3 class="text-xl font-bold">❤️ Heart Health</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Premium black tea with hibiscus and hawthorn for cardiovascular wellness</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>❤️ Heart Support</p>
+                            <p>🩸 Circulation</p>
+                            <p>⚖️ Balance & Wellness</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹599</p>
+                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Product 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                    <div class="bg-linear-to-r from-purple-600 to-pink-600 text-white p-4">
+                        <h3 class="text-xl font-bold">🌸 Skin Glow</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">White and green tea blend with rose petals for skin beauty from within</p>
+                        <div class="space-y-2 mb-4 text-sm text-gray-600">
+                            <p>✨ Skin Radiance</p>
+                            <p>💧 Hydration & Glow</p>
+                            <p>🌹 Natural Beauty</p>
+                        </div>
+                        <p class="font-bold text-amber-700 mb-4">₹679</p>
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection 3: Tea Starter Kits -->
+        <section class="mb-20">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
+                    <span class="text-5xl mr-4">🎁</span> Tea Starter Kits
+                </h2>
+                <p class="text-gray-700 text-lg ml-20">
+                    Perfect for beginners or as premium gifts. Everything you need to start your tea journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Starter Kit 1 -->
+                <div class="bg-linear-to-br from-amber-50 to-white rounded-lg shadow-lg p-8 border-2 border-amber-300 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">🫖 The Essentials Kit</h3>
+                    <p class="text-gray-700 mb-6">Everything needed to begin your tea exploration:</p>
+                    <ul class="space-y-3 mb-6 text-gray-700">
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> 3 Premium Tea Varieties (75g each)</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Glass Infuser Teapot</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Stainless Steel Tea Strainer</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Ceramic Tea Cups (Set of 2)</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Brewing Guide</li>
+                    </ul>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-700 font-bold text-2xl">₹1,999</span>
+                        <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-6 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Starter Kit 2 -->
+                <div class="bg-linear-to-br from-amber-50 to-white rounded-lg shadow-lg p-8 border-2 border-amber-300 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">⭐ The Premium Collection</h3>
+                    <p class="text-gray-700 mb-6">For the serious tea enthusiast:</p>
+                    <ul class="space-y-3 mb-6 text-gray-700">
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> 5 Signature Blends (100g each)</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Borosilicate Glass Teapot</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Bamboo Tea Matcha Whisk</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Premium Ceramic Tea Set (4 cups)</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Tea Tasting Notes Journal</li>
+                        <li class="flex items-center"><span class="text-amber-600 mr-3">✓</span> Expert Brewing Video Series</li>
+                    </ul>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-700 font-bold text-2xl">₹3,999</span>
+                        <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-6 rounded-lg transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection 4: Brewing Gear -->
+        <section class="mb-20">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
+                    <span class="text-5xl mr-4">🛠️</span> Premium Brewing Gear
+                </h2>
+                <p class="text-gray-700 text-lg ml-20">
+                    High-quality equipment to perfect your brewing experience.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gear 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">🫖 Borosilicate Glass Teapot</h3>
+                    <p class="text-gray-700 mb-4">800ml premium glass teapot with built-in infuser</p>
+                    <p class="text-amber-700 font-bold mb-4">₹1,299</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+
+                <!-- Gear 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">🌊 Smart Temperature Kettle</h3>
+                    <p class="text-gray-700 mb-4">Digital kettle with precise temperature control</p>
+                    <p class="text-amber-700 font-bold mb-4">₹2,499</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+
+                <!-- Gear 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">🥄 Bamboo Matcha Whisk</h3>
+                    <p class="text-gray-700 mb-4">Traditional handcrafted bamboo whisk for perfect matcha</p>
+                    <p class="text-amber-700 font-bold mb-4">₹449</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+
+                <!-- Gear 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">🍵 Ceramic Tea Set</h3>
+                    <p class="text-gray-700 mb-4">Set of 6 premium ceramic cups for tea service</p>
+                    <p class="text-amber-700 font-bold mb-4">₹899</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+
+                <!-- Gear 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">🔗 Stainless Steel Strainer</h3>
+                    <p class="text-gray-700 mb-4">Fine mesh strainer for loose leaf brewing</p>
+                    <p class="text-amber-700 font-bold mb-4">₹299</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+
+                <!-- Gear 6 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 border border-amber-100 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">⏱️ Tea Timer</h3>
+                    <p class="text-gray-700 mb-4">Digital timer for perfect brewing times</p>
+                    <p class="text-amber-700 font-bold mb-4">₹399</p>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection 5: Limited Edition Harvests -->
+        <section class="mb-20">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
+                    <span class="text-5xl mr-4">👑</span> Limited Edition Harvests
+                </h2>
+                <p class="text-gray-700 text-lg ml-20">
+                    Exclusive single-estate teas. Show your expertise with rare, collector-grade selections.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Limited Edition 1 -->
+                <div class="bg-linear-to-br from-amber-700 to-amber-800 text-white rounded-lg shadow-2xl p-8 border-2 border-amber-500 transform hover:scale-105 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Darjeeling First Flush 2024</h3>
+                            <p class="opacity-90">Single Estate | Muscatel Grape Notes</p>
+                        </div>
+                        <span class="bg-amber-500 text-amber-900 font-bold px-3 py-1 rounded text-sm">Limited</span>
+                    </div>
+                    <p class="mb-6 leading-relaxed">
+                        The first harvest of spring from a premium Darjeeling estate. Prized for its light, fruity profile and muscatel characteristics. Only 500g available.
+                    </p>
+                    <div class="space-y-2 mb-6 text-sm opacity-95">
+                        <p>📍 Darjeeling, India | 🌿 First Flush | ☕ Premium Grade</p>
+                        <p>📦 50g (Limited Stock) | ⭐ Collector's Grade</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-bold">₹2,499</span>
+                        <button class="bg-white text-amber-800 font-bold py-2 px-6 rounded-lg hover:bg-amber-100 transition">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Limited Edition 2 -->
+                <div class="bg-linear-to-br from-amber-700 to-amber-800 text-white rounded-lg shadow-2xl p-8 border-2 border-amber-500 transform hover:scale-105 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Japanese Gyokuro Reserve</h3>
+                            <p class="opacity-90">Shade-Grown | Umami Masterpiece</p>
+                        </div>
+                        <span class="bg-amber-500 text-amber-900 font-bold px-3 py-1 rounded text-sm">Rare</span>
+                    </div>
+                    <p class="mb-6 leading-relaxed">
+                        Japan's rarest and most expensive tea. Shade-grown for maximum umami and sweetness. Only 300g imported this season.
+                    </p>
+                    <div class="space-y-2 mb-6 text-sm opacity-95">
+                        <p>📍 Kyoto, Japan | 🌿 Shade-Grown | ☕ Premium Ceremonial Grade</p>
+                        <p>📦 30g (Extremely Limited) | ⭐ Investment Grade</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-bold">₹3,999</span>
+                        <button class="bg-white text-amber-800 font-bold py-2 px-6 rounded-lg hover:bg-amber-100 transition">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-linear-to-r from-amber-600 to-amber-700 text-white rounded-lg p-12 text-center">
+            <h2 class="text-4xl font-bold mb-4">Discover Your Perfect Tea</h2>
+            <p class="text-xl opacity-95 mb-8">
+                Not sure where to start? Take our Tea Sommelier Quiz for personalized recommendations.
+            </p>
+            <button class="bg-white text-amber-700 font-bold py-3 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-lg">
+                Start Quiz
+            </button>
+        </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,247 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}
+    Services - MY TEAAA Junction
+{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="bg-linear-to-r from-amber-700 to-amber-600 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Our Services</h1>
+            <p class="text-xl md:text-2xl opacity-95">Elevating Your Tea Experience Beyond The Cup</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <!-- Intro Section -->
+        <section class="mb-20">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Premium Services Curated For You</h2>
+                <p class="text-lg text-gray-700">
+                    At MY TEAAA Junction, we believe in offering more than just premium teas. We provide comprehensive services designed to enhance your tea journey, 
+                    whether you're a casual enthusiast or a dedicated connoisseur.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+            <!-- Service 1: Tea Subscription Box -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    📦
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Tea Discovery Box</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Receive a carefully curated selection of premium teas delivered monthly. Each box contains 4-5 exclusive blends, brewing tips, 
+                        and tasting notes from our tea sommelier.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> 4-5 exclusive teas monthly</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Brewing guides included</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Cancel anytime</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> 15% subscriber discount</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Subscribe Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 2: Wholesale & B2B -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    🏢
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Wholesale & B2B Partnership</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Partner with us for your cafe, office, restaurant, or retail store. We offer competitive wholesale pricing, custom packaging, 
+                        and dedicated account management.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Bulk order pricing</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Custom branding options</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Flexible delivery schedules</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Dedicated support</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Get Quote
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 3: Virtual Tea Tasting -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    🎓
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Virtual Tea Tasting Session</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Join our expert tea sommelier for interactive tasting sessions. Learn about flavor profiles, brewing techniques, food pairings, 
+                        and tea culture from the comfort of your home.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> 1-on-1 or group sessions</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Sample teas provided</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Certificate of completion</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Personalized recommendations</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Book Session
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 4: Custom Gifting & Events -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    🎁
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Custom Gifting & Events</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Perfect for weddings, corporate events, or special occasions. We create custom tea sets, personalized packaging, 
+                        and can arrange tea tasting stations for your event.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Wedding favors</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Corporate gifting</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Event planning & catering</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Custom packaging</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 5: Tea Sommelier Consultation -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    🧙
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Tea Sommelier Consultation</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Take our interactive quiz or have a personalized chat with our tea expert. Get recommendations tailored to your mood, 
+                        taste preferences, and health goals.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> AI-powered quiz</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Expert recommendations</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Health benefits guidance</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Customized tea collection</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Start Quiz
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 6: Brewing Masterclass -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
+                <div class="h-48 bg-linear-to-br from-amber-400 to-amber-600 flex items-center justify-center text-6xl">
+                    ☕
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4">Brewing Masterclass</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Master the art of brewing with our comprehensive courses. Learn water temperatures, steeping times, equipment selection, 
+                        and advanced brewing techniques from our experts.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Video tutorials</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Live workshops</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Equipment recommendations</p>
+                        <p class="text-gray-700 flex items-center"><span class="text-amber-600 mr-2">✓</span> Lifetime access to content</p>
+                    </div>
+                    <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Our Services Section -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Our Services?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-linear-to-br from-amber-50 to-white p-8 rounded-lg shadow-md border border-amber-100 text-center">
+                    <div class="text-5xl mb-4">🌟</div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Expert Curated</h3>
+                    <p class="text-gray-700">
+                        Every service is designed and delivered by our certified tea experts with years of experience in the tea industry.
+                    </p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-8 rounded-lg shadow-md border border-amber-100 text-center">
+                    <div class="text-5xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Premium Quality</h3>
+                    <p class="text-gray-700">
+                        We use only the finest, ethically sourced teas and premium materials for all our services and products.
+                    </p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-8 rounded-lg shadow-md border border-amber-100 text-center">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Personalized</h3>
+                    <p class="text-gray-700">
+                        Each service is tailored to your unique preferences and requirements for maximum satisfaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-linear-to-r from-amber-600 to-amber-700 text-white rounded-lg p-12 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Enhance Your Tea Experience?</h2>
+            <p class="text-xl opacity-95 mb-8 max-w-2xl mx-auto">
+                Explore our range of services and find the perfect way to deepen your connection with premium tea.
+            </p>
+            <button class="bg-white text-amber-700 font-bold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-lg">
+                Get Started Today
+            </button>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mt-20">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Service FAQs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ How do subscription boxes work?</h4>
+                    <p class="text-gray-700 text-sm">Choose your subscription tier, and we'll deliver a curated selection of teas to your door each month. You can pause or cancel anytime.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ What's included in the tasting session?</h4>
+                    <p class="text-gray-700 text-sm">Sample teas, expert guidance on brewing and tasting notes, food pairing suggestions, and a personalized recommendation list.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ Can I customize bulk orders?</h4>
+                    <p class="text-gray-700 text-sm">Absolutely! We offer custom blends, packaging designs, and labeling options. Contact our B2B team for details.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ How far in advance for event planning?</h4>
+                    <p class="text-gray-700 text-sm">We recommend booking at least 4 weeks in advance for custom events, but we'll do our best to accommodate shorter timelines.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ Are there group discounts?</h4>
+                    <p class="text-gray-700 text-sm">Yes! We offer special pricing for group sessions, corporate teams, and bulk purchases. Contact us for a custom quote.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-900 mb-3 text-lg">❓ Do you offer refunds if unsatisfied?</h4>
+                    <p class="text-gray-700 text-sm">Yes! We offer a 100% satisfaction guarantee on all services. If you're unhappy, we'll work to make it right.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

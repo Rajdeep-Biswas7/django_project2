@@ -1,0 +1,327 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}
+    Contact Us - MY TEAAA Junction
+{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="bg-linear-to-r from-amber-700 to-amber-600 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-xl md:text-2xl opacity-95">We'd Love to Hear From You</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <!-- Contact Form & Business Card Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
+                <form class="space-y-6 bg-white p-8 rounded-lg shadow-md border border-amber-100">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-800 mb-2">Your Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Enter your full name"
+                            class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-600 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-gray-800 mb-2">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Enter your phone number"
+                            class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-600 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-bold text-gray-800 mb-2">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email"
+                            class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-600 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div>
+                        <label for="subject" class="block text-sm font-bold text-gray-800 mb-2">Subject</label>
+                        <select 
+                            id="subject" 
+                            name="subject"
+                            class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-600 transition"
+                            required
+                        >
+                            <option value="">Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-bold text-gray-800 mb-2">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5"
+                            placeholder="Share your thoughts with us..."
+                            class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-600 transition resize-none"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit"
+                        class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Business Card -->
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-full max-w-sm">
+                    <!-- Fancy Business Card -->
+                    <div class="bg-linear-to-br from-amber-50 via-cream-50 to-amber-100 rounded-xl shadow-2xl overflow-hidden border-4 border-amber-400 transform hover:scale-105 transition-transform duration-300">
+                        <!-- Card Top Section -->
+                        <div class="bg-linear-to-r from-amber-700 to-amber-600 p-6 text-white text-center">
+                            <div class="text-6xl mb-3">🫖</div>
+                            <h3 class="text-2xl font-bold">Tea Junction</h3>
+                            <p class="text-sm opacity-90">Premium Tea Specialists</p>
+                        </div>
+
+                        <!-- Card Bottom Section -->
+                        <div class="p-8 bg-white">
+                            <div class="text-center mb-6 border-b-2 border-amber-300 pb-6">
+                                <h4 class="text-lg font-bold text-amber-900 mb-1">Founder & Tea Sommelier</h4>
+                                <p class="text-amber-700 font-semibold">Your Name</p>
+                            </div>
+
+                            <div class="space-y-4 text-sm text-gray-700">
+                                <div class="flex items-center justify-start">
+                                    <span class="text-lg text-amber-600 mr-3">📧</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Email</p>
+                                        <p class="text-amber-700">info@teajunction.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-start">
+                                    <span class="text-lg text-amber-600 mr-3">📱</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Phone</p>
+                                        <p class="text-amber-700">+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-start">
+                                    <span class="text-lg text-amber-600 mr-3">📍</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Location</p>
+                                        <p class="text-amber-700">Your City, Country</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-start">
+                                    <span class="text-lg text-amber-600 mr-3">⏰</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Hours</p>
+                                        <p class="text-amber-700">Mon-Fri: 9AM-6PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="mt-6 pt-6 border-t-2 border-amber-300 flex justify-center gap-4">
+                                <a href="#" class="text-2xl hover:text-amber-700 transition">📘</a>
+                                <a href="#" class="text-2xl hover:text-amber-700 transition">📷</a>
+                                <a href="#" class="text-2xl hover:text-amber-700 transition">🐦</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews/Testimonials Section -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Customer Reviews</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Share your tea tasting experience and help other enthusiasts discover their perfect brew</p>
+
+            <!-- Add Review Form -->
+            <div class="bg-linear-to-r from-amber-50 to-orange-50 p-8 rounded-lg border-2 border-amber-200 mb-12">
+                <h3 class="text-2xl font-bold text-amber-900 mb-6">Leave Your Review</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input 
+                            type="text" 
+                            placeholder="Your Name"
+                            class="px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-700"
+                            required
+                        >
+                        <select class="px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-700" required>
+                            <option value="">Select Tea Type</option>
+                            <option value="green">Green Tea</option>
+                            <option value="black">Black Tea</option>
+                            <option value="white">White Tea</option>
+                            <option value="oolong">Oolong Tea</option>
+                            <option value="herbal">Herbal Tea</option>
+                        </select>
+                    </div>
+
+                    <!-- Star Rating -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-800 mb-3">Taste & Flavor Rating</label>
+                        <div class="flex gap-2 text-4xl">
+                            <button type="button" class="star-rating cursor-pointer hover:scale-110 transition" data-value="1">⭐</button>
+                            <button type="button" class="star-rating cursor-pointer hover:scale-110 transition" data-value="2">⭐</button>
+                            <button type="button" class="star-rating cursor-pointer hover:scale-110 transition" data-value="3">⭐</button>
+                            <button type="button" class="star-rating cursor-pointer hover:scale-110 transition" data-value="4">⭐</button>
+                            <button type="button" class="star-rating cursor-pointer hover:scale-110 transition" data-value="5">⭐</button>
+                        </div>
+                        <input type="hidden" id="star-rating" name="rating" value="0">
+                    </div>
+
+                    <!-- Review Text -->
+                    <div>
+                        <label for="review" class="block text-sm font-bold text-gray-800 mb-2">Your Review</label>
+                        <textarea 
+                            id="review"
+                            placeholder="Share your thoughts on the taste, aroma, and overall experience..."
+                            rows="4"
+                            class="w-full px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-700 resize-none"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button 
+                        type="submit"
+                        class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 rounded-lg transition-all duration-300"
+                    >
+                        Post Review
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sample Reviews Display -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-600 hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-gray-900">Priya M.</h4>
+                        <span class="text-amber-600">★★★★★</span>
+                    </div>
+                    <p class="text-sm text-amber-700 font-semibold mb-2">Himalayan Morning Glow</p>
+                    <p class="text-gray-700">"Absolutely exquisite! The floral notes are so delicate, and the taste is incredibly smooth. I've found my new morning ritual!"</p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-600 hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-gray-900">Rajesh K.</h4>
+                        <span class="text-amber-600">★★★★★</span>
+                    </div>
+                    <p class="text-sm text-amber-700 font-semibold mb-2">Midnight Jasmine</p>
+                    <p class="text-gray-700">"The complexity of flavors is remarkable. This is premium quality at its finest. Highly recommended for serious tea enthusiasts."</p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-600 hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-gray-900">Anjali S.</h4>
+                        <span class="text-amber-600">★★★★★</span>
+                    </div>
+                    <p class="text-sm text-amber-700 font-semibold mb-2">Focus Matcha</p>
+                    <p class="text-gray-700">"Fresh, vibrant, and energizing! The matcha tastes authentic, and I can really feel the difference in my focus and alertness."</p>
+                </div>
+
+                <!-- Review Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-600 hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-gray-900">Vikram P.</h4>
+                        <span class="text-amber-600">★★★★★</span>
+                    </div>
+                    <p class="text-sm text-amber-700 font-semibold mb-2">Sleep & Relax Blend</p>
+                    <p class="text-gray-700">"Perfect blend for winding down. The lavender and chamomile are perfectly balanced. I sleep better after having this!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-800 mb-3 flex items-center">
+                        <span class="text-xl mr-3">❓</span> How do I brew the perfect cup?
+                    </h4>
+                    <p class="text-gray-700 text-sm">Each tea has unique brewing requirements. Check the brewing guide on each product page for precise temperature and steeping times.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-800 mb-3 flex items-center">
+                        <span class="text-xl mr-3">❓</span> What's your return policy?
+                    </h4>
+                    <p class="text-gray-700 text-sm">We offer a 100% satisfaction guarantee. If you're not happy, contact us within 30 days for a full refund or replacement.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-800 mb-3 flex items-center">
+                        <span class="text-xl mr-3">❓</span> Do you offer bulk orders?
+                    </h4>
+                    <p class="text-gray-700 text-sm">Yes! We have a wholesale program perfect for cafes and businesses. Contact our team for special pricing and custom orders.</p>
+                </div>
+
+                <div class="bg-linear-to-br from-amber-50 to-white p-6 rounded-lg border border-amber-200">
+                    <h4 class="font-bold text-amber-800 mb-3 flex items-center">
+                        <span class="text-xl mr-3">❓</span> How fresh is the tea?
+                    </h4>
+                    <p class="text-gray-700 text-sm">All our teas are freshly sourced and packaged. We typically ship within 48 hours to ensure maximum freshness.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Star Rating -->
+    <script>
+        document.querySelectorAll('.star-rating').forEach(star => {
+            star.addEventListener('click', function(e) {
+                e.preventDefault();
+                const value = this.getAttribute('data-value');
+                document.getElementById('star-rating').value = value;
+                
+                // Visual feedback
+                document.querySelectorAll('.star-rating').forEach(s => {
+                    if(s.getAttribute('data-value') <= value) {
+                        s.style.opacity = '1';
+                    } else {
+                        s.style.opacity = '0.3';
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}
