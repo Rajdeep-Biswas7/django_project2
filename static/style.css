@@ -1,40 +1,441 @@
-body{
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ==================== Global Styles ==================== */
+:root {
+    --primary-brown: #6B5B4F;
+    --secondary-taupe: #9B8B7E;
+    --accent-terracotta: #A0826D;
+    --light-cream: #F8F6F3;
+    --dark-charcoal: #3E3531;
+    --text-color: #4A4340;
+    --border-light: #E8E4E0;
+}
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #9f802b;
+    box-sizing: border-box;
 }
-header {
-    background-color: #4b6c2e;
-    color: #79d749;
-    padding: 20px;
-    text-align: center;
+
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-cream);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ==================== Typography ==================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--dark-charcoal);
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* ==================== Navigation ==================== */
 nav {
-    background-color: #945050;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--border-light);
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-brown);
+}
+
+nav .brand {
+    color: var(--primary-brown);
+}
+
+/* ==================== Buttons ==================== */
+button {
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-brown);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-charcoal);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ==================== Cards ==================== */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-terracotta);
+}
+
+.card-image {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #F5F1ED 0%, #EFE9E4 100%);
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.03), transparent);
+    transition: all 0.5s ease;
+}
+
+.product-card:hover .card-image::after {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.08), transparent);
+}
+
+/* ==================== Footer ==================== */
+footer {
+    background-color: var(--dark-charcoal);
+    color: #D4CCCC;
+    padding: 48px 24px;
+    margin-top: 80px;
+}
+
+footer a {
+    color: #F5F1ED;
+}
+
+footer a:hover {
+    color: var(--accent-terracotta);
+}
+
+/* ==================== Hero Sections ==================== */
+.hero-section {
+    background: linear-gradient(135deg, #F8F6F3 0%, #F5F1ED 50%, #EFE9E4 100%);
+    padding: 96px 24px;
+}
+
+/* ==================== Utilities ==================== */
+.gradient-underline {
+    width: 64px;
+    height: 4px;
+    background-color: var(--secondary-taupe);
+    border-radius: 9999px;
+}
+
+.text-muted {
+    color: var(--secondary-taupe);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-charcoal);
+    margin-bottom: 16px;
+}
+
+/* ==================== Product Grid ==================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* ==================== Price Display ==================== */
+.price-display {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--primary-brown);
+}
+
+.price-label {
+    font-size: 0.75rem;
+    color: var(--secondary-taupe);
+    margin-bottom: 4px;
+}
+
+/* ==================== Specs Section ==================== */
+.specs-section {
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    padding: 24px 0;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+}
+
+.spec-item:last-child {
+    margin-bottom: 0;
+}
+
+.spec-label {
+    color: var(--secondary-taupe);
+}
+
+.spec-value {
+    font-weight: 600;
+    color: var(--dark-charcoal);
+}
+
+/* ==================== Animation ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        gap: 16px;
+    }
+    
+    .hero-section {
+        padding: 48px 16px;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+    }
+}
+
+.product-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-amber-light);
+}
+
+.card-image {
+    height: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     overflow: hidden;
 }
-nav a {
-    float: left;
-    display: block;
-    color: #ad3cad;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
+    transition: all 0.5s ease;
 }
-nav a:hover {
-    background-color: #a11818;
-    color: black;
+
+.product-card:hover .card-image::after {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
 }
-main {
-    padding: 20px;
-}
+
+/* ==================== Footer ==================== */
 footer {
-    background-color: #333;
-    color: #3599af;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: var(--stone-900);
+    color: #d1d5db;
+    padding: 48px 24px;
+    margin-top: 80px;
 }
+
+footer a {
+    color: #f3f4f6;
+}
+
+footer a:hover {
+    color: var(--primary-amber-light);
+}
+
+/* ==================== Hero Sections ==================== */
+.hero-section {
+    background: linear-gradient(to bottom, #fef3c7 0%, #fef5e7 50%, #f5f5f4 100%);
+    padding: 96px 24px;
+}
+
+/* ==================== Utilities ==================== */
+.gradient-underline {
+    width: 64px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-amber), var(--primary-amber-light));
+    border-radius: 9999px;
+}
+
+.text-muted {
+    color: var(--stone-600);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--stone-900);
+    margin-bottom: 16px;
+}
+
+/* ==================== Product Grid ==================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* ==================== Price Display ==================== */
+.price-display {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--primary-amber);
+}
+
+.price-label {
+    font-size: 0.75rem;
+    color: var(--stone-600);
+    margin-bottom: 4px;
+}
+
+/* ==================== Specs Section ==================== */
+.specs-section {
+    border-top: 1px solid var(--stone-200);
+    border-bottom: 1px solid var(--stone-200);
+    padding: 24px 0;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+}
+
+.spec-item:last-child {
+    margin-bottom: 0;
+}
+
+.spec-label {
+    color: var(--stone-600);
+}
+
+.spec-value {
+    font-weight: 600;
+    color: var(--stone-900);
+}
+
+/* ==================== Animation ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        gap: 16px;
+    }
+    
+    .hero-section {
+        padding: 48px 16px;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+    }
+}
+

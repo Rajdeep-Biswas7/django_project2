@@ -1,103 +1,520 @@
 {% extends 'website/layout.html' %}
 
 {% block title %}
-    Products - MY TEAAA Junction
+    Our Collection - Café Atelier
 {% endblock %}
 
 {% block content %}
     <!-- Hero Section -->
-    <div class="bg-linear-to-r from-amber-700 to-amber-600 text-white py-16 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Our Premium Collection</h1>
-            <p class="text-xl md:text-2xl opacity-95">Curated Teas from Around the World</p>
+    <section style="background: linear-gradient(to bottom, #F8F6F3, #F5F1ED);" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <p class="text-cafe-taupe font-medium text-sm tracking-widest uppercase mb-3">Discover Our Collection</p>
+            <h1 class="font-display text-5xl md:text-6xl font-bold text-cafe-dark mt-3 mb-4">Premium Selection</h1>
+            <p class="text-lg text-cafe-brown max-w-2xl mx-auto leading-relaxed">
+                Hand-selected teas from renowned estates worldwide. Each blend crafted with intention and care.
+            </p>
         </div>
-    </div>
+    </section>
 
     <!-- Main Content -->
-    <div class="max-w-6xl mx-auto px-4 py-16">
-        <!-- Introduction -->
-        <section class="mb-20">
-            <div class="text-center max-w-3xl mx-auto">
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">The Art of Tea Selection</h2>
-                <p class="text-lg text-gray-700">
-                    We don't believe in offering a simple list of teas. Instead, we've carefully curated our collection into premium categories 
-                    that celebrate quality, origin, and the experience each tea brings. Discover your new favorite.
-                </p>
-            </div>
-        </section>
-
-        <!-- Collection 1: Signature Blends -->
-        <section class="mb-20">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        
+        <!-- Signature Blends Section -->
+        <section class="mb-24">
             <div class="mb-12">
-                <h2 class="text-4xl font-bold text-amber-900 mb-3 flex items-center">
-                    <span class="text-5xl mr-4">✨</span> Signature Blends
-                </h2>
-                <p class="text-gray-700 text-lg ml-20">
-                    Exclusive house-crafted blends that tell a story. Each blend is a masterpiece combining premium leaves from our finest estates.
+                <p class="text-cafe-taupe font-medium text-sm tracking-widest uppercase mb-3">Signature Collection</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-cafe-dark mb-4">Artisan Blends</h2>
+                <div style="width: 48px; height: 3px; background-color: #9B8B7E; border-radius: 9999px;"></div>
+                <p class="text-cafe-brown text-lg mt-6 max-w-2xl leading-relaxed">
+                    Our celebrated creations. Each blend tells a story of craftsmanship and flavor harmony.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Product Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
-                    <div class="h-40 bg-linear-to-br from-green-300 to-green-700 flex items-center justify-center text-6xl">
-                        🌿
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-white to-cafe-cream h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-6xl font-light text-cafe-taupe mb-2">leaf</div>
+                            <p class="text-cafe-taupe text-sm font-medium">Himalayan Morning Glow</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/3 to-transparent group-hover:from-black/5 transition-all duration-500"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-amber-900 mb-2">The Himalayan Morning Glow</h3>
-                        <p class="text-gray-600 mb-3 text-sm">A delicate blend of white tea with jasmine flowers and hints of honey</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-amber-700 font-bold text-lg">₹599</span>
-                            <span class="text-yellow-500">★★★★★</span>
+                        <h3 class="font-display text-xl font-bold text-cafe-dark mb-2">Himalayan Morning Glow</h3>
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">Delicate white tea with jasmine flowers and honey. Gentle and awakening.</p>
+                        
+                        <div class="mb-6 space-y-2 border-y border-cafe-light py-4 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Steeping Time</span>
+                                <span class="font-semibold text-cafe-dark">3-5 min</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Temperature</span>
+                                <span class="font-semibold text-cafe-dark">160-170°F</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Quantity</span>
+                                <span class="font-semibold text-cafe-dark">50g (25 cups)</span>
+                            </div>
                         </div>
-                        <div class="space-y-2 mb-6 text-sm text-gray-600">
-                            <p>🫖 Steeping Time: 3-5 minutes</p>
-                            <p>🌡️ Temperature: 160-170°F</p>
-                            <p>📦 50g (25 cups)</p>
+
+                        <div class="flex items-end justify-between mb-5">
+                            <div>
+                                <p class="text-cafe-taupe text-xs mb-1">Starting at</p>
+                                <p class="text-2xl font-bold text-cafe-brown">₹599</p>
+                            </div>
+                            <div class="flex items-center gap-1 text-cafe-brown">
+                                <span class="text-sm font-medium">5.0</span>
+                                <span class="text-lg">★</span>
+                            </div>
                         </div>
-                        <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Product Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
-                    <div class="h-40 bg-linear-to-br from-purple-300 to-purple-700 flex items-center justify-center text-6xl">
-                        🌙
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-white to-cafe-cream h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-6xl font-light text-cafe-taupe mb-2">night</div>
+                            <p class="text-cafe-taupe text-sm font-medium">Midnight Jasmine</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/3 to-transparent group-hover:from-black/5 transition-all duration-500"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Midnight Jasmine</h3>
-                        <p class="text-gray-600 mb-3 text-sm">Dark oolong with intoxicating jasmine essence—a luxury evening experience</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-amber-700 font-bold text-lg">₹749</span>
-                            <span class="text-yellow-500">★★★★★</span>
+                        <h3 class="font-display text-xl font-bold text-cafe-dark mb-2">Midnight Jasmine</h3>
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">Dark oolong with intoxicating jasmine. A luxury evening experience.</p>
+                        
+                        <div class="mb-6 space-y-2 border-y border-cafe-light py-4 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Steeping Time</span>
+                                <span class="font-semibold text-cafe-dark">4-6 min</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Temperature</span>
+                                <span class="font-semibold text-cafe-dark">195-205°F</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Quantity</span>
+                                <span class="font-semibold text-cafe-dark">75g (30 cups)</span>
+                            </div>
                         </div>
-                        <div class="space-y-2 mb-6 text-sm text-gray-600">
-                            <p>🫖 Steeping Time: 4-6 minutes</p>
-                            <p>🌡️ Temperature: 195-205°F</p>
-                            <p>📦 75g (30 cups)</p>
+
+                        <div class="flex items-end justify-between mb-5">
+                            <div>
+                                <p class="text-cafe-taupe text-xs mb-1">Starting at</p>
+                                <p class="text-2xl font-bold text-cafe-brown">₹749</p>
+                            </div>
+                            <div class="flex items-center gap-1 text-cafe-brown">
+                                <span class="text-sm font-medium">5.0</span>
+                                <span class="text-lg">★</span>
+                            </div>
                         </div>
-                        <button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition">
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
                             Add to Cart
                         </button>
                     </div>
                 </div>
 
                 <!-- Product Card 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100">
-                    <div class="h-40 bg-linear-to-br from-orange-300 to-red-700 flex items-center justify-center text-6xl">
-                        🔥
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-white to-cafe-cream h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-6xl font-light text-cafe-taupe mb-2">spice</div>
+                            <p class="text-cafe-taupe text-sm font-medium">Spiced Chai Royale</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/3 to-transparent group-hover:from-black/5 transition-all duration-500"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Spiced Chai Royale</h3>
-                        <p class="text-gray-600 mb-3 text-sm">Premium black tea with cinnamon, cardamom, and cloves—the perfect chai experience</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-amber-700 font-bold text-lg">₹649</span>
-                            <span class="text-yellow-500">★★★★★</span>
+                        <h3 class="font-display text-xl font-bold text-cafe-dark mb-2">Spiced Chai Royale</h3>
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">Premium black tea with cinnamon, cardamom, cloves. Perfect chai.</p>
+                        
+                        <div class="mb-6 space-y-2 border-y border-cafe-light py-4 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Steeping Time</span>
+                                <span class="font-semibold text-cafe-dark">5-7 min</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Temperature</span>
+                                <span class="font-semibold text-cafe-dark">200-212°F</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-cafe-taupe">Quantity</span>
+                                <span class="font-semibold text-cafe-dark">100g (35 cups)</span>
+                            </div>
                         </div>
-                        <div class="space-y-2 mb-6 text-sm text-gray-600">
-                            <p>🫖 Steeping Time: 5-7 minutes</p>
+
+                        <div class="flex items-end justify-between mb-5">
+                            <div>
+                                <p class="text-cafe-taupe text-xs mb-1">Starting at</p>
+                                <p class="text-2xl font-bold text-cafe-brown">₹649</p>
+                            </div>
+                            <div class="flex items-center gap-1 text-cafe-brown">
+                                <span class="text-sm font-medium">5.0</span>
+                                <span class="text-lg">★</span>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Collection Section -->
+        <section class="mt-24">
+            <div class="mb-12">
+                <p class="text-cafe-taupe font-medium text-sm tracking-widest uppercase mb-3">Wellness Line</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-cafe-dark mb-4">Wellness Collection</h2>
+                <div style="width: 48px; height: 3px; background-color: #9B8B7E; border-radius: 9999px;"></div>
+                <p class="text-cafe-brown text-lg mt-6 max-w-2xl leading-relaxed">
+                    Curated for wellbeing. Each blend selected to support your wellness journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Wellness Card 1 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div style="background: linear-gradient(135deg, #F5F1ED 0%, #EFE9E4 100%);" class="px-6 py-8">
+                        <p class="text-cafe-dark font-semibold text-lg">Sleep & Relax</p>
+                        <p class="text-cafe-brown text-sm mt-1">Evening Calm</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">
+                            Lavender, chamomile, passionflower. Perfect for peaceful evenings.
+                        </p>
+                        
+                        <div class="mb-6 space-y-2 bg-cafe-cream p-3 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Calming herbs</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Better sleep quality</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Natural stress relief</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <p class="text-cafe-taupe text-xs mb-1">Price</p>
+                            <p class="text-2xl font-bold text-cafe-brown">₹579</p>
+                        </div>
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Card 2 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div style="background: linear-gradient(135deg, #F5F1ED 0%, #EFE9E4 100%);" class="px-6 py-8">
+                        <p class="text-cafe-dark font-semibold text-lg">Focus & Clarity</p>
+                        <p class="text-cafe-brown text-sm mt-1">Pure Matcha</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">
+                            Ceremonial grade matcha for mental clarity and sustained energy.
+                        </p>
+                        
+                        <div class="mb-6 space-y-2 bg-cafe-cream p-3 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Sustained energy</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Enhanced focus</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Antioxidant rich</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <p class="text-cafe-taupe text-xs mb-1">Price</p>
+                            <p class="text-2xl font-bold text-cafe-brown">₹899</p>
+                        </div>
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Card 3 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-cafe-light">
+                    <div style="background: linear-gradient(135deg, #F5F1ED 0%, #EFE9E4 100%);" class="px-6 py-8">
+                        <p class="text-cafe-dark font-semibold text-lg">Beauty & Glow</p>
+                        <p class="text-cafe-brown text-sm mt-1">Antioxidant Blend</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-cafe-brown text-sm leading-relaxed mb-5">
+                            Rose petals, hibiscus, white tea. Vitamins and natural antioxidants.
+                        </p>
+                        
+                        <div class="mb-6 space-y-2 bg-cafe-cream p-3 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Skin radiance</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">High antioxidants</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cafe-brown mt-1.5"></div>
+                                <span class="text-sm text-cafe-dark">Delicate florals</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <p class="text-cafe-taupe text-xs mb-1">Price</p>
+                            <p class="text-2xl font-bold text-cafe-brown">₹629</p>
+                        </div>
+
+                        <button class="w-full bg-cafe-brown hover:bg-cafe-dark text-white font-semibold py-2.5 rounded-lg transition-all duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+                <!-- Product Card 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-purple-100 via-stone-50 to-amber-50 h-72 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-7xl font-light text-stone-300 mb-2">night</div>
+                            <p class="text-stone-500 text-sm font-medium">Midnight Jasmine</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent group-hover:from-black/10 transition-all duration-500"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-display text-2xl font-bold text-stone-900 mb-2">Midnight Jasmine</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">Dark oolong with intoxicating jasmine essence. A luxury experience for your evening ritual.</p>
+                        
+                        <div class="mb-8 space-y-3 border-y border-stone-100 py-6">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Steeping Time</span>
+                                <span class="font-semibold text-stone-900">4-6 minutes</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Temperature</span>
+                                <span class="font-semibold text-stone-900">195-205°F</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Quantity</span>
+                                <span class="font-semibold text-stone-900">75g (30 cups)</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-end justify-between mb-6">
+                            <div>
+                                <p class="text-stone-600 text-xs mb-1">Starting at</p>
+                                <p class="text-3xl font-bold text-amber-700">₹749</p>
+                            </div>
+                            <div class="flex items-center gap-1 text-amber-600">
+                                <span class="text-sm font-medium">5.0</span>
+                                <span class="text-lg">★</span>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-red-100 via-amber-50 to-stone-100 h-72 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-7xl font-light text-stone-300 mb-2">spice</div>
+                            <p class="text-stone-500 text-sm font-medium">Spiced Chai Royale</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent group-hover:from-black/10 transition-all duration-500"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-display text-2xl font-bold text-stone-900 mb-2">Spiced Chai Royale</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">Premium black tea with cinnamon, cardamom, and cloves. The perfect chai experience.</p>
+                        
+                        <div class="mb-8 space-y-3 border-y border-stone-100 py-6">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Steeping Time</span>
+                                <span class="font-semibold text-stone-900">5-7 minutes</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Temperature</span>
+                                <span class="font-semibold text-stone-900">200-212°F</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-stone-600">Quantity</span>
+                                <span class="font-semibold text-stone-900">100g (35 cups)</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-end justify-between mb-6">
+                            <div>
+                                <p class="text-stone-600 text-xs mb-1">Starting at</p>
+                                <p class="text-3xl font-bold text-amber-700">₹649</p>
+                            </div>
+                            <div class="flex items-center gap-1 text-amber-600">
+                                <span class="text-sm font-medium">5.0</span>
+                                <span class="text-lg">★</span>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Collection Section -->
+        <section class="mb-32">
+            <div class="mb-16">
+                <p class="text-amber-700 font-medium text-sm tracking-widest uppercase mb-3">Curated Wellness</p>
+                <h2 class="font-display text-5xl font-bold text-stone-900 mb-4">Wellness Collection</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full"></div>
+                <p class="text-stone-600 text-lg mt-6 max-w-2xl leading-relaxed">
+                    Thoughtfully selected blends designed to support your wellness journey and daily rituals.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Wellness Card 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 px-8 py-10 border-b border-blue-200">
+                        <p class="text-blue-700 font-semibold text-lg">Sleep & Relax</p>
+                        <p class="text-blue-600 text-sm mt-1">Evening Calm</p>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Lavender, chamomile, and passionflower blend for peaceful evenings and restful nights.
+                        </p>
+                        
+                        <div class="mb-8 space-y-3 bg-blue-50 p-4 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Calming and soothing herbs</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Promotes better sleep quality</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Natural stress relief</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-stone-600 text-xs mb-1">Price</p>
+                            <p class="text-3xl font-bold text-blue-700">₹579</p>
+                        </div>
+
+                        <button class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Card 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100">
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-100 px-8 py-10 border-b border-emerald-200">
+                        <p class="text-emerald-700 font-semibold text-lg">Focus & Clarity</p>
+                        <p class="text-emerald-600 text-sm mt-1">Pure Matcha</p>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Ceremonial grade matcha for sustained mental clarity and natural energy throughout your day.
+                        </p>
+                        
+                        <div class="mb-8 space-y-3 bg-emerald-50 p-4 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Sustained energy boost</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Enhanced focus and concentration</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Antioxidant rich ceremonial grade</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-stone-600 text-xs mb-1">Price</p>
+                            <p class="text-3xl font-bold text-emerald-700">₹899</p>
+                        </div>
+
+                        <button class="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Card 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100">
+                    <div class="bg-gradient-to-br from-rose-50 to-pink-100 px-8 py-10 border-b border-rose-200">
+                        <p class="text-rose-700 font-semibold text-lg">Beauty & Glow</p>
+                        <p class="text-rose-600 text-sm mt-1">Antioxidant Blend</p>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Rose petals, hibiscus, and white tea blend enriched with vitamins and natural antioxidants.
+                        </p>
+                        
+                        <div class="mb-8 space-y-3 bg-rose-50 p-4 rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-rose-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Skin radiance and glow</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-rose-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">High in natural antioxidants</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-rose-600 mt-1.5"></div>
+                                <span class="text-sm text-stone-700">Delicate floral flavors</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-stone-600 text-xs mb-1">Price</p>
+                            <p class="text-3xl font-bold text-rose-700">₹629</p>
+                        </div>
+
+                        <button class="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
                             <p>🌡️ Temperature: 200-212°F</p>
                             <p>📦 100g (35 cups)</p>
                         </div>
@@ -425,4 +842,5 @@
             </button>
         </section>
     </div>
+
 {% endblock %}
